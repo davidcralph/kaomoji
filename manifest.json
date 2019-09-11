@@ -1,0 +1,11 @@
+{
+    "name": "Kaomoji",
+    "version": "1.0.0",
+    "description": "Powercord plugin to let you use Kaomoji in Discord!",
+    "author": "ohlookitsderpy",
+    "license": "MIT",
+    "repo": "https://github.com/ohlookitsderpy/kaomoji",
+    "dependencies": [
+      "pc-commands"
+    ]
+}
