@@ -6,6 +6,7 @@ I was watching Yuru Camp when I noticed they used a lot of Kaomoji in the phone 
 
 ## Emotes
 *Over 400 total!*
+
 (Emotion)
 - Joy
 - Love
