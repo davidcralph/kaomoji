@@ -35,4 +35,6 @@ I was watching Yuru Camp when I noticed they used a lot of Kaomoji in the phone 
 - Party
 
 ## Credits
-kaomoji.ru for hosting some good kaomoji
+[kaomoji.ru](http://kaomoji.ru) for hosting some good kaomoji
+
+[Contributors](https://github.com/ohlookitsderpy/kaomoji/graphs/contributors) for being super cool
