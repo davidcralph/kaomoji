@@ -4,7 +4,7 @@
 Powercord plugin to let you use Kaomoji in Discord!
 
 ## About
-I was watching Yuru Camp when I noticed they used a lot of Kaomoji in the phone conversations. Inspired by this, I made a plugin for Discord client mod [Powercord](https://powercord.dev) to make your conversations in Discord a bit more **comf**. 
+I was watching [Yuru Camp](https://myanimelist.net/anime/34798/Yuru_Camp%E2%96%B3) when I noticed they used a lot of Kaomoji in the phone conversations. Inspired by this, I made a plugin for Discord client mod [Powercord](https://powercord.dev) to make your conversations in Discord a bit more **comf**. 
 
 ## Emotes
 *Over 500 total!*
@@ -71,7 +71,6 @@ I was watching Yuru Camp when I noticed they used a lot of Kaomoji in the phone 
 [kaomoji.ru](http://kaomoji.ru/en/) and [cutekaomoji.com](https://cutekaomoji.com) for hosting some good kaomoji
 
 [Contributors](https://github.com/ohlookitsderpy/kaomoji/graphs/contributors) for being super cool
-
 
 ## License
 [MIT](LICENSE)
