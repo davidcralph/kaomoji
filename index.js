@@ -1,5 +1,5 @@
-// Imports
-const emotes     = require('./emotes.json');
+//* Imports
+const emotes = require('./emotes.json');
 const { Plugin } = require('powercord/entities');
 
 // Cutting edge technology
@@ -10,7 +10,6 @@ module.exports = class Kaomoji extends Plugin {
       [ 'kao' ],
       'Appends a kaomoji to your message!',
       '{c} [ emotion ]',
-      // code
       args => {
         const emotion = args.shift();
         const emoteSelection = emotes[emotion];
