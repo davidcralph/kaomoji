@@ -10,9 +10,8 @@ module.exports = class Kaomoji extends Plugin {
       [ 'kao' ],
       'Appends a kaomoji to your message!',
       '{c} [ emotion ]',
-      args => {
-        const emotion = args.shift();
-        const emoteSelection = emotes[emotion];
+      (args) => {
+        const emoteSelection = emotes[args.shift()];
         if (emoteSelection) {
           return {
             send: true,
@@ -21,11 +20,11 @@ module.exports = class Kaomoji extends Plugin {
         }
         return {
           send: false,
-          result: 'There aren\'t any kaomoji for that emotion! Pick an emotion from the list.'
+          result: 'There aren\'t any kaomoji for that emotion! Pick an emotion from the list. If you need help, checkout <https://github.com/ohlookitsderpy/kaomoji>!'
         };
       },
-      // autocomplete
-      args => {
+      // Autocomplete
+      (args) => {
         if (args.length !== 1) {
           return false;
         }
@@ -37,7 +36,7 @@ module.exports = class Kaomoji extends Plugin {
               command: e,
               description: ''
             })),
-          header: 'Emotions'
+          header: 'Kaomoji Emotions'
         };
       }
     );
