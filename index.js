@@ -1,8 +1,6 @@
-//* Imports
 const emotes = require('./emotes.json');
 const { Plugin } = require('powercord/entities');
 
-// Cutting edge technology
 module.exports = class Kaomoji extends Plugin {
 	startPlugin() {
 		powercord.api.commands.registerCommand({
@@ -23,7 +21,7 @@ module.exports = class Kaomoji extends Plugin {
 				return {
 					send: false,
 					result:
-						"There aren't any kaomoji for that emotion! Pick an emotion from the list. If you need help, checkout <https://github.com/ohlookitsderpy/kaomoji>!",
+						'There aren\'t any kaomoji for that emotion! Pick an emotion from the list. If you need help, check out <https://github.com/davidjcralph/kaomoji>!',
 				};
 			},
 			autocomplete: (args) => {

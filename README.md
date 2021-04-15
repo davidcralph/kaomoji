@@ -53,6 +53,8 @@ I was watching [Yuru Camp](https://myanimelist.net/anime/34798/Yuru_Camp%E2%96%B
 (Events)
 - New Years
 - Valentines Day
+- Birthday
+- Christmas
 
 (Other)
 - Lying
@@ -68,9 +70,6 @@ I was watching [Yuru Camp](https://myanimelist.net/anime/34798/Yuru_Camp%E2%96%B
 - Teto
 
 ## Credits
-[kaomoji.ru](http://kaomoji.ru/en/) and [cutekaomoji.com](https://cutekaomoji.com) for hosting some good kaomoji
+[kaomoji.ru](http://kaomoji.ru/en/) and [cutekaomoji.com](https://cutekaomoji.com) - Kaomoji used in this plugin
 
-[Contributors](https://github.com/ohlookitsderpy/kaomoji/graphs/contributors) for being super cool
-
-## License
-[MIT](LICENSE)
+and all the contributors!
