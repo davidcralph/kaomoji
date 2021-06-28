@@ -14,7 +14,7 @@ module.exports = class Kaomoji extends Plugin {
           if (emoteSelection) {
             return {
               send: true,
-              result: emoteSelection
+              result: `${args.join(' ')} ${emoteSelection}`
             };
           }
           throw new Error();
