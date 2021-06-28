@@ -50,7 +50,7 @@ module.exports = class Kaomoji extends Plugin {
           } catch {
             return {
               commands: [],
-              header: 'No Emojis Found :('
+              header: 'No kaomoji found :('
             };
           }
         }
