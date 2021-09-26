@@ -21,7 +21,7 @@ module.exports = class Kaomoji extends Plugin {
 				return {
 					send: false,
 					result:
-						'There aren\'t any kaomoji for that emotion! Pick an emotion from the list. If you need help, check out <https://github.com/davidjcralph/kaomoji>!',
+						'There aren\'t any kaomoji for that emotion! Pick an emotion from the list. If you need help, check out <https://github.com/davidcralph/kaomoji>!',
 				};
 			},
 			autocomplete: (args) => {
