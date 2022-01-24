@@ -45,7 +45,8 @@ module.exports = class Kaomoji extends Plugin {
               commands: object.map((item, index) => ({
                 command: index,
                 description: item
-              }))
+              })),
+              header: 'Kaomoji Emotions'
             };
           } catch {
             return {
