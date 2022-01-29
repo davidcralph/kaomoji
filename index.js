@@ -9,6 +9,16 @@ module.exports = class Kaomoji extends Plugin {
       description: 'Appends a kaomoji to your message!',
       usage: '{c} [ emotion ]',
       executor: (args) => {
+        if (args[1] === 'random') {
+          const emoteSelection = emotes[args.shift()];
+          args.shift();
+
+          return {
+            send: true,
+            result: `${args.join(' ')} ${emoteSelection[Math.floor(Math.random() * emoteSelection.length)]}`
+          };
+        }
+
         try {
           const emoteSelection = emotes[args.shift()][args.shift()];
           if (emoteSelection) {
@@ -41,11 +51,19 @@ module.exports = class Kaomoji extends Plugin {
         } else if (args.length === 2) {
           try {
             const object = emotes[args.shift()];
+            const list = object.map((item, index) => ({
+              command: index,
+              description: item
+            }));
+
+            list.unshift({
+              command: 'random',
+              description: 'Pick random kaomoji'
+            });
+
             return {
-              commands: object.map((item, index) => ({
-                command: index,
-                description: item
-              }))
+              commands: list,
+              header: 'Kaomoji Emotions'
             };
           } catch {
             return {
