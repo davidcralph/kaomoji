@@ -1,6 +1,17 @@
 const emotes = require('./emotes.json');
 const { Plugin } = require('powercord/entities');
 
+
+const markdownChars = [ '_', '*', '`', '~', '<', '>', '@', '\\' ];
+
+const removeMarkdown = (emote) => {
+  let emoteFormatted = '';
+  for (const char of emote) {
+    emoteFormatted += markdownChars.includes(char) ? `\\${char}` : char;
+  }
+  return emoteFormatted;
+};
+
 module.exports = class Kaomoji extends Plugin {
   startPlugin () {
     powercord.api.commands.registerCommand({
@@ -15,7 +26,7 @@ module.exports = class Kaomoji extends Plugin {
 
           return {
             send: true,
-            result: `${args.join(' ')} ${emoteSelection[Math.floor(Math.random() * emoteSelection.length)]}`
+            result: `${args.join(' ')} ${removeMarkdown(emoteSelection[Math.floor(Math.random() * emoteSelection.length)])}`
           };
         }
 
@@ -24,7 +35,7 @@ module.exports = class Kaomoji extends Plugin {
           if (emoteSelection) {
             return {
               send: true,
-              result: `${args.join(' ')} ${emoteSelection}`
+              result: `${args.join(' ')} ${removeMarkdown(emoteSelection)}`
             };
           }
           throw new Error();
